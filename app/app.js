@@ -1,6 +1,7 @@
 
 const express = require('express');
 const cors = require('cors');
+const userRouter = require('../router/userRouter');
 const app = express();
 //use middleware to form our contract for incoming json payloads ONLY!
 app.use(express.json());
@@ -9,6 +10,8 @@ app.use(express.urlencoded({extended:true}));
 //middleware to handle cors policy
 
 app.use(cors());
+//HEALTH POINT OR accurator
+//https://localhost:3001
 
 /*** 
 app.use((req , res , next) => {
@@ -28,6 +31,8 @@ app.get('/',(req,res,next) =>{
     res.status(200).json({message : 'Service is up'})
 });
 //routers
+app.use('/users',userRouter);
+
 //build url or error we can handle
 //with middleware
 
