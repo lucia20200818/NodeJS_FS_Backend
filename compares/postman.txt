@@ -1,0 +1,14 @@
+{
+
+     "firstName": "Eric",
+      "lastName": "Clarke",
+      "address": "123 Main St",
+      "city": "Orlando",
+      "state": "FL",
+      "zipCode": "34256",
+      "email": "eric@eric.com",
+      "password": "123"
+
+}
+//for register
+
